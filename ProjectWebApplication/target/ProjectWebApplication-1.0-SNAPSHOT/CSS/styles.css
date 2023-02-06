@@ -1,0 +1,118 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Dec 12, 2022, 1:48:58 PM
+    Author     : SethJ
+*/
+
+body {margin: 0;
+      padding: 0;}
+
+body {font-family: "Inter";}
+
+h2 {text-align: center;}
+
+.grid {display: grid;
+       grid-template-columns: 15% 70% 15%;
+       grid-template-rows: 6vh auto 6vh;
+       grid-template-areas: "logo topnav user"
+                            "content content content"
+                            "footer footer footer";}
+
+.logo {grid-area: logo;
+       background-color:cornflowerblue;}
+.topnav {grid-area: topnav;
+         background-color: burlywood;}
+.user {grid-area: user;
+       background-color:tan;}
+.content {grid-area: content;
+          background-color:navajowhite;}
+.footer {grid-area: footer;
+         background-color:black;}
+
+
+
+.logo {display: flex;
+       justify-content: center;
+       font-size: 2vh;}
+
+
+
+.topnav {display: flex;
+         justify-content: center;}
+
+
+
+.user {display: flex;
+       justify-content: center;}
+
+
+
+.content {display: block;
+          justify-content: center;}
+
+
+          
+.nav{list-style: none;
+     float: left;}
+
+.nav li{border-right: 2px solid black;
+        display: inline-block;
+        float: left;
+        padding: 0 15px;}
+
+.nav a {text-decoration: none;
+        color: black;}
+
+.nav a:hover {color: white;}
+
+.nav ul li a.current {color: black;}
+
+.nav li:last-child {border-right:0;} 
+
+
+
+.footer {background-color: #1B7164;
+         display: flex;
+         justify-content: center;
+         padding: 20px;}
+
+footer a {text-decoration: none;
+          padding: 0px 20px 0px 20px;
+          color: white;}
+
+
+
+.card {display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-gap: 2rem;
+       background: #E8E4D0;
+       color: #1B7164;
+       margin-bottom: 5%;
+       margin-left: 20%;
+       margin-right: 20%;
+       border: solid 3px #1B7164;}
+     
+.card h2 {margin-bottom: 2rem;
+          padding: 0px;
+          text-align: center}
+     
+.card img {height: 500px}
+     
+.card > div {padding: 2rem;}
+     
+.card:nth-child(even) img {order: 2;}
+     
+.btn {display: inline-block;
+           text-align: center;
+           background: #000;
+           color: #fff;
+           padding: 0.8em 1.2em;
+           cursor: pointer;
+           text-decoration: none;
+           font-size: 1em;
+           margin: 2vh 16.5vw;}
+     
+.btn:hover {opacity: 0.8;}
